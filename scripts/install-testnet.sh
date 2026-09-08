@@ -119,6 +119,7 @@ heading "Installing pnpm..."
 
     sudo npm install -g npm@latest
     npm config set allow-scripts=pnpm --location=user
+    info "(npm) allow-scripts=pnpm"
     npm install --prefix=~/.pnpm -g pnpm
     if ! $(grep -Eq "(PNPM_HOME)" "$HOME/.bashrc"); then
         echo 'export PNPM_HOME=$HOME/.pnpm' >> ~/.bashrc
